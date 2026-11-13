@@ -125,3 +125,66 @@ Các nội dung em tập trung tìm hiểu gồm có (Bài này là phần tốn
 | `2306.05031v2.pdf` | CRoZe | Paper liên quan |
 | `2610.01317v1.pdf` | Prediction-powered NAS | Paper liên quan |
 | `2608.19472v3.pdf` | SynFlow: A Multidimensional Diachronic Semantic Analysis Toolkit | Paper chính|
+
+## Kiến thức trong các paper:
+**Các paper được phát triển như sau**
+
+```mermaid
+flowchart TD
+    A["Neural Architecture Search"]
+    A --> B["NAS without Full Training"]
+    B --> C["NASWOT"]
+    B --> D["Zero-Cost Proxy Evaluation"]
+    D --> E["EZNAS"]
+    F["Pruning at Initialization"] --> G["SynFlow"]
+    C --> H["Robustness-aware NAS"]
+    G --> H
+    E --> H
+    H --> I["CRoZe"]
+    H --> J["ZCP Robustness Evaluation"]
+    D --> K["Prediction-powered NAS"]
+    K --> L["Combining Proxy Scores and Limited Labels"]
+```
+**Các tiêu chí tương quan, em đánh giá các yếu tố như sau**
+
+| Tiêu chí | NASWOT | SynFlow | EZNAS |
+|---|---|---|---|
+| Ý tưởng chính | Activation overlap | Synaptic flow | Evolutionary proxy discovery |
+| Thông tin chính | Activation | Weight và gradient | Network statistics |
+| Dữ liệu thật | Có | Không | Tùy tensor/biểu thức |
+| Nhãn | Không cần | Không cần | Ground truth cần cho discovery fitness |
+| Forward Pass | Có | Có | Tùy biểu thức |
+| Backward Pass | Không | Có | Tùy biểu thức |
+| Full Training | Không | Không | Không cần cho scoring kiến trúc mới |
+| Đầu ra | Scalar score | Weight saliency / aggregate score | Proxy expression |
+| Mục tiêu gốc | Performance prediction | Pruning at initialization | Performance prediction |
+| Chi phí nổi bật | Kernel computation | Gradient và pruning iterations | Genetic Programming discovery |
+
+**Các link signal giữa paper**
+```mermaid
+flowchart LR
+    A["Initialized Architecture"]
+    A --> B["Activation"]
+    A --> C["Weight"]
+    A --> D["Gradient"]
+    B --> E["NASWOT"]
+    C --> F["SynFlow"]
+    D --> F
+    B --> G["Other Proxy Signals"]
+    C --> G
+    D --> G
+    E --> H["Architecture Evaluation"]
+    F --> H
+    G --> H
+```
+## Dataset & Benchmark
+> Hiện tại, em đang kết hợp tìm hiểu một vài kiến thức liên quan đến cv, nên hiện tại, em sử dụng các dataset liên quan đến cifar-100 và bench mark nas-bench-201 trong quá trình thực hiện.
+
+| Dataset / Benchmark | Mục đích |
+|---|---|
+| CIFAR-10 | Kiểm tra pipeline phân loại và clean performance |
+| CIFAR-100 | Đánh giá trên dataset có nhiều lớp hơn |
+| CIFAR-10-C | Common-corruption robustness |
+| CIFAR-100-C | Common-corruption robustness |
+| NAS-Bench-201 | Architecture search space và performance labels |
+| NAS-Bench-Suite-Zero | So sánh các zero-cost proxies |
