@@ -46,7 +46,7 @@
 
 **Neural Architecture Search without Training (NASWOT)**
 
-> arXiv: `2006.04647`
+> arXiv: `2006.04647`;
 > Publication: ICML 2021
 > Authors: Joseph Mellor, Jack Turner, Amos Storkey, Elliot J. Crowley.
 > Paper: https://arxiv.org/abs/2006.04647
@@ -81,3 +81,47 @@ Các nội dung em tập trung tìm hiểu gồm có:
 - Crossover và Mutation
 - EZNAS-A
 - Generalization across architecture search spaces
+
+**Pruning Neural Networks without Any Data by Iteratively Conserving Synaptic Flow (SynFlow)**
+
+> ArXiv: `2006.05467`
+> Publication: NeurIPS 2020.
+> Authors: Hidenori Tanaka, Daniel Kunin, Daniel L. K. Yamins, Surya Ganguli.
+> Paper: https://arxiv.org/abs/2006.05467
+> Official code: https://github.com/ganguli-lab/Synaptic-Flow
+
+Các nội dung em tập trung tìm hiểu gồm có (Bài này là phần tốn thời gian của em nhiều nhất trong quá trình làm):
+
+- Network Pruning.
+- Pruning at Initialization.
+- Weight Linearization.
+- Synaptic Flow.
+- Gradient-based Saliency.
+- Iterative Pruning.
+- Layer Collapse.
+- Data-free Scoring.
+
+**Ngoài ra, còn có một số paper liên quan mà em đọc qua bao gồm**
+
+> Đây là các paper liên quan trong quá trình nghiên cứu 3 paper được giao; nên em không đi sâu vào chi tiết các paper - chỉ nắm các phần chính cho các paper mà em đang nghiên cứu. 
+
+| Paper | Năm | Liên quan | Các phần liên quan |
+|---|---|---|---|
+| Zero-Cost Proxies for Lightweight NAS | 2021 | Proxy evaluation | SNIP, GraSP, SynFlow và cách đánh giá các proxy |
+| NAS-Bench-Suite-Zero | 2022 | Benchmark | Đánh giá nhiều ZCP trên nhiều tquan |
+| Neural Architecture Design and Robustness: A Dataset | 2023 | Robustness benchmark | Architecture-level robustness evaluation |
+| CRoZe | 2023 | Robustness-aware ZCP | Feature, parameter và gradient consistency *(Đây là 1/2 paper em quan tâm nhiều nhất khi tìm hiểu các paper liên quan)*|
+| An Evaluation of Zero-Cost Proxies | 2025 | Robustness prediction | Khả năng dự đoán robustness bằng nhiều proxy |
+| Zero-Cost Proxy for Adversarial Robustness Evaluation | 2025 | Adversarial robustness | Proxy chuyên biệt cho adversarial robustness |
+| TRNAS | 2025 | Training-free robust NAS | Training-free adversarial robust architecture search |
+| Prediction-powered Neural Architecture Search | 2026 | Proxy-assisted NAS | Kết hợp ZCP với một lượng ground-truth architecture labels hạn chế *(Đây là 2/2 paper em quan tâm nhiều nhất khi tìm hiểu các paper liên quan)* |
+
+**Các paper em đính kèm (/src/papers/*)**
+| File PDF | Paper | Liên quan |
+|---|---|---|
+| `2006.04647v3.pdf` | NASWOT | Paper chính |
+| `2209.07413v3.pdf` | EZNAS | Paper chính |
+| `2006.05467v3.pdf` | SynFlow | Paper chính|
+| `2306.05031v2.pdf` | CRoZe | Paper liên quan |
+| `2610.01317v1.pdf` | Prediction-powered NAS | Paper liên quan |
+| `2608.19472v3.pdf` | SynFlow: A Multidimensional Diachronic Semantic Analysis Toolkit | Paper chính|
