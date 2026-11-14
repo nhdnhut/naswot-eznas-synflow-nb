@@ -13,8 +13,8 @@
 | PDF | [PMLR PDF](https://proceedings.mlr.press/v139/mellor21a/mellor21a.pdf) |
 | Mã nguồn | [BayesWatch/nas-without-training](https://github.com/BayesWatch/nas-without-training) |
 
-**Tìm hiểu về NAS**
-> Ban đầu, khi chưa tiếp cận đến NAS và các paper liên quan, em suy luận rằng: Các neural network được quyết định hoàn toàn bằng dữ liệu và quy trình train; nhưng, ở đây - tác giả và các lý thuyết đã cho em thấy các vấn đề về kiến trúc của mạng neural cũng có thể ảnh hưởng đến khả năng học; khi đó những thành phần gây ra ảnh hưởng bao gồm: số layers, số channel, convolution, pooling, skip connection và các phép toán liên quan. Khi đó, NAS là một hướng nghiên cứu sẽ dùng để tự tìm hoàn toàn một kiến trúc phù hợp trong dãy có rất nhiều lựa chọn liên quan. 
+**NAS**
+> Ban đầu, khi chưa tiếp cận đến NAS và các paper liên quan, em cho rằng: Các neural network được quyết định hoàn toàn bằng dữ liệu và quy trình train; nhưng, ở đây - tác giả và các lý thuyết đã cho em thấy các vấn đề về kiến trúc của mạng neural cũng có thể ảnh hưởng đến khả năng học; khi đó những thành phần gây ra ảnh hưởng bao gồm: số layers, số channel, convolution, pooling, skip connection và các phép toán liên quan. Khi đó, NAS là một hướng nghiên cứu sẽ dùng để tự tìm hoàn toàn một kiến trúc phù hợp trong dãy có rất nhiều lựa chọn liên quan. 
 
 Đặt không gian các kiến trúc là tập $\mathcal{A}$, như sau:
 
