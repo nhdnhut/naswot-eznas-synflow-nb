@@ -7,7 +7,7 @@
 | Tên paper | *Neural Architecture Search without Training* |
 | Tác giả | Joseph Mellor, Jack Turner, Amos Storkey, Elliot J. Crowley |
 | Năm / Hội nghị | 2021 - International Conference on Machine Learning (ICML) |
-| Nơi xuất bản | Proceedings of Machine Learning Research, Vol. 139, pp. 7588–7598 |
+| Nơi xuất bản | Proceedings of Machine Learning Research, Vol. 139, pp. 7588-7598 |
 | arXiv | [2006.04647](https://arxiv.org/abs/2006.04647) |
 | Paper chính thức | [PMLR](https://proceedings.mlr.press/v139/mellor21a.html) |
 | PDF | [PMLR PDF](https://proceedings.mlr.press/v139/mellor21a/mellor21a.pdf) |
