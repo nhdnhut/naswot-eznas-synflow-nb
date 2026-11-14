@@ -25,7 +25,7 @@ $$
 Khi đó, với cách đánh giá chuẩn, mỗi kiến trúc được tạo mới; được train một phần hoặc toàn bộ rồi đo accuracy; được biểu diễn bởi biểu thức sau:
 
 $$
-A^* = \arg\max_{A_i \in \mathcal{A}} \operatorname{Acc}_{\mathrm{val}}(A_i).
+A^* = \arg\max_{A_i \in \mathcal{A}} \mathrm{Acc}_{\mathrm{val}}(A_i).
 $$
 
 > Tương tự như trên, khi xếp hàng nghìn kiến trúc hoàn toàn để train thử sẽ khiến NAS tốn runtime, tài nguyên, ... Từ đó, nhiều phương pháp NAS được tìm ra để cắt giảm bớt các vấn đề trên.
@@ -45,7 +45,7 @@ Trong quy trình này, khi xét ở một đơn vị nhỏ của network; với 
 **Hàm ReLU được định nghĩa:** 
 
 $$
-\phi(z) = \operatorname{ReLU}(z) = \max(0, z).
+\phi(z) = \mathrm{ReLU}(z) = \max(0, z).
 $$
 
 Có hai trường hợp:
