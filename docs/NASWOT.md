@@ -273,7 +273,7 @@ $$
 K_\epsilon = K_H + \epsilon I.
 $$
 
-Jitter là biện pháp số học trong implementation; phải ghi rõ giá trị $\epsilon$, vì nó làm thay đổi ma trận được score so với công thức lý tưởng trong paper.
+Jitter là biện pháp số học trong implementation; phải ghi rõ giá trị $\epsilon$, vì nó làm thay đổi ma trận được score so với công thức lý tưởng trong paper. (Chỗ này chưa hiểu rõ)
 
 ## Biến Logic
 
