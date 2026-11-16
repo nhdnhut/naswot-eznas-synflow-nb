@@ -1,5 +1,5 @@
 # naswot-eznas-synflow-nb
-> Notebook này để ghi chép lại quá trình tìm hiểu 3 Paper: EZNAS, NASWOT, SynFlow, ...; các nghiên cứu liên quan đến Zero-Cost NAS và các Thư viện liên quan sẽ ứng dụng trong quá trình học và thực hiện. Ngôn ngữ được sử dụng note: Tiếng Việt (Có thể sẽ có phiên bản Tiếng Anh để phục vụ cho việc chuyên sâu ở chuyên ngành.)
+> Notebook này để ghi chép lại quá trình tìm hiểu 3 Paper: EZNAS, NASWOT, SynFlow, ...; các nghiên cứu liên quan đến Zero-Cost NAS và các Thư viện liên quan sẽ ứng dụng trong quá trình học và thực hiện. Ngôn ngữ được sử dụng note: Tiếng Việt (Có thể sẽ có phiên bản Tiếng Anh để phục vụ cho việc chuyên sâu ở chuyên ngành). Có một vài phạm trù nằm xa hơn với những kiến thức hiện tại em đã trang bị; chính vì thế, thời gian tìm hiểu của em tương đối lâu và phải nhờ AI trong việc hỗ trợ các vấn đề về code, thuật toán.
 > Các paper đã được đính kèm tại /src/papers/... với các mã paper đính kèm - phục vụ cho quá trình đọc và học hỏi từ các paper.
 ## Tiếp cận
 Định hướng tiếp cận của em đối với 3 paper này để hiểu chủ yếu về các quy trình: Bài toán -> lý thuyết -> công thức toán -> thuật toán -> triển khai -> đánh giá. Cụ thể, quy trình của em được diễn ra như sau:
@@ -188,3 +188,17 @@ flowchart LR
 | CIFAR-100-C | Common-corruption robustness |
 | NAS-Bench-201 | Architecture search space và performance labels |
 | NAS-Bench-Suite-Zero | So sánh các zero-cost proxies |
+
+## Các tài liệu và notebook em đã thực hiện
+
+> Trong quá trình tìm hiểu ba paper EZNAS, NASWOT và SynFlow, em xây dựng các tài liệu Markdown để ghi lại quá trình học, phân tích và hệ thống hóa kiến thức của mình.
+> Các tài liệu được em viết với mục tiêu tự học của bản thân, hiểu những gì mình đang làm. Trong đây, em có sử dụng AI để hiểu rõ các thuật toán, code và tiện cho quá trình tìm hiểu các paper liên quan!
+| Phương pháp | File tài liệu | Nội dung chính |
+|---|---|---|
+| **EZNAS** | [`docs/EZNAS.md`](docs/EZNAS.md) | Zero-Cost Proxy Discovery, Genetic Programming, Expression Tree, Tensor Collection, Fitness Function, Crossover, Mutation và EZNAS-A. |
+| **NASWOT** | [`docs/NASWOT.md`](docs/NASWOT.md) | Activation Patterns, Binary Activation Matrix, Hamming Distance, Kernel Matrix, Log-determinant và Architecture Scoring. |
+| **SynFlow** | [`docs/SynFLow.md`](docs/SynFLow.md) | Network Pruning, Pruning at Initialization, Weight Linearization, Synaptic Flow, Gradient-based Saliency, Iterative Pruning và Layer Collapse. |
+| **Zero-Cost Proxy Lab** | [`notebooks/01_zero_cost_proxy_colab_lab.ipynb`](notebooks/01_zero_cost_proxy_colab_lab.ipynb) | Triển khai NASWOT, SynFlow cùng các thành phần liên quan. |
+| **Proxy Implementation** | [`src/zero_cost_metrics.py`](src/zero_cost_metrics.py) | Tách các thuật toán liên quan thành hàm. |
+| **Unit Tests** | [`tests/test_zero_cost_metrics.py`](tests/test_zero_cost_metrics.py) | Kiểm tra các thàmh phần liên quan. |
+| **Experimental Guide** | [`docs/COLAB_LAB.md`](docs/COLAB_LAB.md) | Note colab_lab của mình. |
