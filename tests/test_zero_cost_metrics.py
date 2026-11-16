@@ -71,6 +71,5 @@ class ZeroCostMetricTests(unittest.TestCase):
         self.assertIsInstance(result["model"], nn.Module)
         self.assert_model_unchanged()
 
-
 if __name__ == "__main__":
     unittest.main()
