@@ -19,7 +19,6 @@ from typing import Any
 import torch
 from torch import Tensor, nn
 
-
 def count_parameters(model: nn.Module, trainable_only: bool = True) -> int:
     """Count model parameters, optionally including frozen parameters."""
     return sum(
@@ -91,6 +90,7 @@ def naswot_score(
 
     if not activations:
         raise RuntimeError("No ReLU activations were captured")
+
 
     # Concatenate every ReLU unit / spatial activation position into one code.
     codes = torch.cat(activations, dim=1).to(dtype=torch.float64)
