@@ -193,6 +193,7 @@ flowchart LR
 
 > Trong quá trình tìm hiểu ba paper EZNAS, NASWOT và SynFlow, em xây dựng các tài liệu Markdown để ghi lại quá trình học, phân tích và hệ thống hóa kiến thức của mình.
 > Các tài liệu được em viết với mục tiêu tự học của bản thân, hiểu những gì mình đang làm. Trong đây, em có sử dụng AI để hiểu rõ các thuật toán, code và tiện cho quá trình tìm hiểu các paper liên quan!
+
 | Phương pháp | File tài liệu | Nội dung chính |
 |---|---|---|
 | **EZNAS** | [`docs/EZNAS.md`](docs/EZNAS.md) | Zero-Cost Proxy Discovery, Genetic Programming, Expression Tree, Tensor Collection, Fitness Function, Crossover, Mutation và EZNAS-A. |
